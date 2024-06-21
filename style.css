@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+.wellcom_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #40751a;
+  background-size: cover;
+  transition: fiter 0.7s;
+}
+.wellcom_container .btn {
+  padding: 8px 25px;
+  background-color: #f0a206;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.fist_active {
+  filter: blur(10px) brightness(0.7);
+}
+.register_container {
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.7s;
+}
+.register_container .email {
+  margin-top: 10px;
+  padding: 10px;
+}
+.register_container .email::placeholder {
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.5;
+}
+.register_container .submit {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4f571b;
+  color: white;
+  cursor: pointer;
+}
+.exit_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.exit_btn:hover {
+  color: red;
+}
+.second-active {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
